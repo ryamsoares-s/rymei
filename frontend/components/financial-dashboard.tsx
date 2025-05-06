@@ -1,11 +1,13 @@
+// components/financial-dashboard.tsx
+
 "use client";
 
 import { useState } from "react";
-import { TransactionForm } from "./transaction-form";
-import { TransactionList } from "./transaction-list";
-import { FinancialSummary } from "./financial-summary";
-import { Navbar } from "./navbar";
-import { WelcomeCard } from "./welcome-card";
+import { TransactionForm } from "@/components/transaction-form";
+import { TransactionList } from "@/components/transaction-list";
+import { FinancialSummary } from "@/components/financial-summary";
+import { Navbar } from "@/components/navbar";
+import { WelcomeCard } from "@/components/welcome-card";
 import type { Transaction } from "@/types/transaction";
 
 export function FinancialDashboard() {
