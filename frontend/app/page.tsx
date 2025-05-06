@@ -1,3 +1,6 @@
+// app/page.tsx
+"use client";
+
 import { FinancialDashboard } from "@/components/financial-dashboard";
 
 export default function Home() {
