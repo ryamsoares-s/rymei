@@ -2,6 +2,7 @@
 import { Navbar } from "@/components/navbar";
 import { BarChart3, PieChart, TrendingUp, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function RelatoriosPage() {
   return (
@@ -24,9 +25,11 @@ export default function RelatoriosPage() {
             <p className="text-gray-600 mb-4">
               Visualize um resumo das suas receitas e despesas mensais.
             </p>
-            <Button className="w-full bg-teal-600 hover:bg-teal-700">
-              Ver Relatório
-            </Button>
+            <Link href="/relatorios/resumo-mensal" passHref>
+              <Button className="w-full bg-teal-600 hover:bg-teal-700">
+                Ver Relatório
+              </Button>
+            </Link>
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-md border border-teal-100 hover:shadow-lg transition-shadow">
